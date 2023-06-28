@@ -20,7 +20,7 @@ namespace mozilla {
 
 class ScreencastEncoder {
 public:
-    static constexpr int fps = 25;
+    static constexpr int fps = 60;
 
     static std::unique_ptr<ScreencastEncoder> create(nsCString& errorString, const nsCString& filePath, int width, int height, const gfx::IntMargin& margin);
 
